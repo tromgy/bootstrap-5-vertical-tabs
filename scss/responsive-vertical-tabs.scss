@@ -52,6 +52,16 @@ $sideways-tabs-height: 1rem;
   min-width: 100%;
 }
 
+// Workaround for Safari issue :/
+// Bootstrap 5 uses <button type="button"> for tabs, but
+// <button> doesn't work for vertical orientation, and applying type="button"
+// to another element (e.g. <div>) will render it in Safari as "early 21st century style" button,
+// with gray gradient, border, etc. So we don't set type="button", but then we need
+// to change the cursor to indicate that the tab is "clickable"
+.tab-clickable {
+  cursor: pointer;
+}
+
 // Left vertical tabs
 .left-tabs.nav-tabs {
   @extend %flex-tabs;
