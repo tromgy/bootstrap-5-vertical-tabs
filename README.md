@@ -1,6 +1,6 @@
 # Responsive Vertical Navigation Tabs for Boostrap 5
 
-[![Build Status](https://travis-ci.com/tromgy/bootstrap-5-vertical-tabs.png?branch=master)](https://travis-ci.com/tromgy/bootstrap-5-vertical-tabs)
+[![Build Status](https://travis-ci.com/tromgy/bootstrap-5-vertical-tabs.png?branch=main)](https://travis-ci.com/tromgy/bootstrap-5-vertical-tabs)
 
 A stylesheet that implements [vertically-oriented navigation tabs](https://b5vtabs.netlify.com) with Bootstrap 5.
 
