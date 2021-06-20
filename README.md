@@ -17,7 +17,10 @@ You can use this package either by directly embedding its pre-built (in the **di
 
 ```HTML
 <link
-  rel="stylesheet" href="<your-server-url>/b5vtabs.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-5-vertical-tabs@1.0.1/dist/b5vtabs.min.css"
+    integrity="sha256-2yiJIxF53wjxXJpWRIHMVx2h6gbxPA9qR4PZ77fmA2k="
+    crossorigin="anonymous"
 />
 ```
 
