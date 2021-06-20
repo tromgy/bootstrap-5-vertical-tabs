@@ -1,0 +1,464 @@
+<!--
+
+Responsive vertical tabs for Bootstrap 5
+
+Demo HTML page.
+
+Copyright (c) 2020-2021 Tromgy (tromgy@yahoo.com)
+
+This software is supplied under the terms of the MIT License, a
+copy of which should be located in the distribution where this
+file was obtained (LICENSE.txt). A copy of the license may also be
+found online at https://opensource.org/licenses/MIT.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Bootstrap Vertical Tabs</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- Vertical tabs CSS -->
+    <link rel="stylesheet" href="b5vtabs.min.css" />
+  </head>
+
+  <body>
+    <div class="py-3 text-center">
+      <h1>Bootstrap Vertical Tabs</h1>
+      <p class="lead">
+        Responsive vertical tabs for Bootstrap 5. Available on
+        <a href="https://www.npmjs.com/package/bootstrap-5-vertical-tabs" target="_blank">npm</a> and
+        <a href="https://github.com/tromgy/bootstrap-5-vertical-tabs" target="_blank">GitHub</a>.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <hr />
+          <h3>Left Tabs</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="nav nav-tabs left-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <div id="lorem-left-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#lorem-left" type="button" role="tab" aria-controls="lorem-left" aria-selected="true">Lorem</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <div id="ipsum-left-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#ipsum-left" type="button" role="tab" aria-controls="ipsum-left" aria-selected="false">Ipsum</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <!-- use the title attribute to show a tooltip with the full long name
+                   in case the tab is trucated-->
+              <div
+                id="llanfairpwllgwyngyll-left-tab" 
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#llanfairpwllgwyngyll-left"
+                type="button"
+                title="Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch"
+                role="tab"
+                aria-controls="llanfairpwllgwyngyll-left"
+                aria-selected="false"
+                >Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9">
+          <div class="container">
+            <div class="tab-content">
+              <article class="tab-pane fade show active" role="tabpanel" aria-labelledby="lorem-left-tab" id="lorem-left">
+                <h1>Lorem</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Diam vulputate
+                  ut pharetra sit amet. Orci ac auctor augue mauris augue neque. Turpis massa sed elementum tempus
+                  egestas. Faucibus ornare suspendisse sed nisi. Ipsum nunc aliquet bibendum enim facilisis gravida
+                  neque convallis a. Pretium fusce id velit ut tortor pretium viverra. Egestas sed tempus urna et
+                  pharetra. Pellentesque adipiscing commodo elit at imperdiet dui. Posuere urna nec tincidunt praesent
+                  semper. Erat velit scelerisque in dictum non consectetur a erat. Scelerisque viverra mauris in
+                  aliquam. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Consectetur lorem donec massa
+                  sapien faucibus et molestie.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="ipsum-left-tab" id="ipsum-left">
+                <h1>Ipsum</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. A lacus vestibulum sed arcu. Mi tempus imperdiet nulla malesuada pellentesque.
+                  Natoque penatibus et magnis dis parturient. Rhoncus aenean vel elit scelerisque mauris pellentesque.
+                  In hendrerit gravida rutrum quisque non tellus orci ac. Lectus magna fringilla urna porttitor rhoncus
+                  dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Senectus et netus et malesuada fames
+                  ac. Diam quis enim lobortis scelerisque fermentum. Praesent tristique magna sit amet purus gravida
+                  quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique magna sit amet
+                  purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit libero
+                  volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="llanfairpwllgwyngyll-left-tab" id="llanfairpwllgwyngyll-left">
+                <h1>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</h1>
+                <section>
+                  <p><small>From Wikipedia, the free encyclopedia</small></p>
+                </section>
+                <section>
+                  <p>
+                    Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch (pronounced
+                    [ˌɬanvair­pʊɬˌɡwɨ̞ŋɡɨ̞ɬ­ɡɔˌɡɛrə­ˌχwərn­ˌdrɔbʊɬ­ˌɬan­təˌsɪljɔ­ˌɡɔɡɔ­ˈɡoːχ] in Welsh), official short
+                    form name Llanfairpwllgwyngyll (pronounced [ɬanˌvair puɬˈɡwɨ̞nɡɨ̞ɬ]), also spelled Llanfair
+                    Pwllgwyngyll, is a large village and local government community on the island of Anglesey in Wales.
+                    It is situated on the Menai Strait next to the Britannia Bridge and across the strait from Bangor.
+                    While the official short form name is used in official contexts, both the full name and shortened
+                    (Llanfairpwll or Llanfair PG) forms of the place name are used in various contexts.
+                  </p>
+                  <p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll"
+                      target="_blank"
+                      title="Open Wikipedia article in a new tab."
+                      >Full article &gt;</a
+                    >
+                  </p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Right Tabs</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="container">
+            <div class="tab-content">
+              <article class="tab-pane fade show active" role="tabpanel" aria-labelledby="lorem-right-tab" id="lorem-right">
+                <h1>Lorem</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Diam vulputate
+                  ut pharetra sit amet. Orci ac auctor augue mauris augue neque. Turpis massa sed elementum tempus
+                  egestas. Faucibus ornare suspendisse sed nisi. Ipsum nunc aliquet bibendum enim facilisis gravida
+                  neque convallis a. Pretium fusce id velit ut tortor pretium viverra. Egestas sed tempus urna et
+                  pharetra. Pellentesque adipiscing commodo elit at imperdiet dui. Posuere urna nec tincidunt praesent
+                  semper. Erat velit scelerisque in dictum non consectetur a erat. Scelerisque viverra mauris in
+                  aliquam. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Consectetur lorem donec massa
+                  sapien faucibus et molestie.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="ipsum-right-tab" id="ipsum-right">
+                <h1>Ipsum</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. A lacus vestibulum sed arcu. Mi tempus imperdiet nulla malesuada pellentesque.
+                  Natoque penatibus et magnis dis parturient. Rhoncus aenean vel elit scelerisque mauris pellentesque.
+                  In hendrerit gravida rutrum quisque non tellus orci ac. Lectus magna fringilla urna porttitor rhoncus
+                  dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Senectus et netus et malesuada fames
+                  ac. Diam quis enim lobortis scelerisque fermentum. Praesent tristique magna sit amet purus gravida
+                  quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique magna sit amet
+                  purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit libero
+                  volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="llanfairpwllgwyngyll-right-tab" id="llanfairpwllgwyngyll-right">
+                <h1>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</h1>
+                <section>
+                  <p><small>From Wikipedia, the free encyclopedia</small></p>
+                </section>
+                <section>
+                  <p>
+                    Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch (pronounced
+                    [ˌɬanvair­pʊɬˌɡwɨ̞ŋɡɨ̞ɬ­ɡɔˌɡɛrə­ˌχwərn­ˌdrɔbʊɬ­ˌɬan­təˌsɪljɔ­ˌɡɔɡɔ­ˈɡoːχ] in Welsh), official short
+                    form name Llanfairpwllgwyngyll (pronounced [ɬanˌvair puɬˈɡwɨ̞nɡɨ̞ɬ]), also spelled Llanfair
+                    Pwllgwyngyll, is a large village and local government community on the island of Anglesey in Wales.
+                    It is situated on the Menai Strait next to the Britannia Bridge and across the strait from Bangor.
+                    While the official short form name is used in official contexts, both the full name and shortened
+                    (Llanfairpwll or Llanfair PG) forms of the place name are used in various contexts.
+                  </p>
+                  <p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll"
+                      target="_blank"
+                      title="Open Wikipedia article in a new tab."
+                      >Full article &gt;</a
+                    >
+                  </p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="nav nav-tabs right-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <div id="lorem-right-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#lorem-right" type="button" role="tab" aria-controls="lorem-right" aria-selected="true">Lorem</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <div id="ipsum-right-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#ipsum-right" type="button" role="tab" aria-controls="ipsum-right" aria-selected="false">Ipsum</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <!-- use the title attribute to show a tooltip with the full long name
+                   in case the tab is trucated-->
+              <div
+                id="llanfairpwllgwyngyll-right-tab"
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#llanfairpwllgwyngyll-right"
+                type="button"
+                title="Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch"
+                role="tab"
+                aria-controls="llanfairpwllgwyngyll-right"
+                aria-selected="false"
+                >Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Sideways Left Tabs</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1">
+          <ul class="nav nav-tabs left-tabs sideways-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <div id="lorem-sleft-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#lorem-sleft" type="button" role="tab" aria-controls="lorem-sleft" aria-select="true">Lorem</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <div id="ipsum-sleft-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#ipsum-sleft" type="button" role="tab" aria-controls="ipsum-sleft">Ipsum</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <!-- use the title attribute to show a tooltip with the full long name
+                   in case the tab is trucated-->
+              <div
+                id="llanfairpwllgwyngyll-sleft-tab"
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#llanfairpwllgwyngyll-sleft"
+                type="button"
+                title="Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch"
+                role="tab"
+                aria-control="llanfairpwllgwyngyll-sleft"
+                >Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-11">
+          <div class="container">
+            <div class="tab-content">
+              <article class="tab-pane fade show active" role="tabpanel" aria-labelledby="lorem-sleft-tab" id="lorem-sleft">
+                <h1>Lorem</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Diam vulputate
+                  ut pharetra sit amet. Orci ac auctor augue mauris augue neque. Turpis massa sed elementum tempus
+                  egestas. Faucibus ornare suspendisse sed nisi. Ipsum nunc aliquet bibendum enim facilisis gravida
+                  neque convallis a. Pretium fusce id velit ut tortor pretium viverra. Egestas sed tempus urna et
+                  pharetra. Pellentesque adipiscing commodo elit at imperdiet dui. Posuere urna nec tincidunt praesent
+                  semper. Erat velit scelerisque in dictum non consectetur a erat. Scelerisque viverra mauris in
+                  aliquam. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Consectetur lorem donec massa
+                  sapien faucibus et molestie.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="ipsum-sleft-tab" id="ipsum-sleft">
+                <h1>Ipsum</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. A lacus vestibulum sed arcu. Mi tempus imperdiet nulla malesuada pellentesque.
+                  Natoque penatibus et magnis dis parturient. Rhoncus aenean vel elit scelerisque mauris pellentesque.
+                  In hendrerit gravida rutrum quisque non tellus orci ac. Lectus magna fringilla urna porttitor rhoncus
+                  dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Senectus et netus et malesuada fames
+                  ac. Diam quis enim lobortis scelerisque fermentum. Praesent tristique magna sit amet purus gravida
+                  quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique magna sit amet
+                  purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit libero
+                  volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="llanfairpwllgwyngyll-sleft-tab" id="llanfairpwllgwyngyll-sleft">
+                <h1>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</h1>
+                <section>
+                  <p><small>From Wikipedia, the free encyclopedia</small></p>
+                </section>
+                <section>
+                  <p>
+                    Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch (pronounced
+                    [ˌɬanvair­pʊɬˌɡwɨ̞ŋɡɨ̞ɬ­ɡɔˌɡɛrə­ˌχwərn­ˌdrɔbʊɬ­ˌɬan­təˌsɪljɔ­ˌɡɔɡɔ­ˈɡoːχ] in Welsh), official short
+                    form name Llanfairpwllgwyngyll (pronounced [ɬanˌvair puɬˈɡwɨ̞nɡɨ̞ɬ]), also spelled Llanfair
+                    Pwllgwyngyll, is a large village and local government community on the island of Anglesey in Wales.
+                    It is situated on the Menai Strait next to the Britannia Bridge and across the strait from Bangor.
+                    While the official short form name is used in official contexts, both the full name and shortened
+                    (Llanfairpwll or Llanfair PG) forms of the place name are used in various contexts.
+                  </p>
+                  <p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll"
+                      target="_blank"
+                      title="Open Wikipedia article in a new tab."
+                      >Full article &gt;</a
+                    >
+                  </p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="container">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Sideways Right Tabs</h3>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-11">
+          <div class="container">
+            <div class="tab-content">
+              <article class="tab-pane fade show active" role="tabpanel" aria-labelledby="lorem-sright-tab" id="lorem-sright">
+                <h1>Lorem</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Diam vulputate
+                  ut pharetra sit amet. Orci ac auctor augue mauris augue neque. Turpis massa sed elementum tempus
+                  egestas. Faucibus ornare suspendisse sed nisi. Ipsum nunc aliquet bibendum enim facilisis gravida
+                  neque convallis a. Pretium fusce id velit ut tortor pretium viverra. Egestas sed tempus urna et
+                  pharetra. Pellentesque adipiscing commodo elit at imperdiet dui. Posuere urna nec tincidunt praesent
+                  semper. Erat velit scelerisque in dictum non consectetur a erat. Scelerisque viverra mauris in
+                  aliquam. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Consectetur lorem donec massa
+                  sapien faucibus et molestie.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="ipsum-sright-tab" id="ipsum-sright">
+                <h1>Ipsum</h1>
+                <section>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. A lacus vestibulum sed arcu. Mi tempus imperdiet nulla malesuada pellentesque.
+                  Natoque penatibus et magnis dis parturient. Rhoncus aenean vel elit scelerisque mauris pellentesque.
+                  In hendrerit gravida rutrum quisque non tellus orci ac. Lectus magna fringilla urna porttitor rhoncus
+                  dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Senectus et netus et malesuada fames
+                  ac. Diam quis enim lobortis scelerisque fermentum. Praesent tristique magna sit amet purus gravida
+                  quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique magna sit amet
+                  purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit libero
+                  volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna.
+                </section>
+              </article>
+              <article class="tab-pane fade" role="tabpanel" aria-labelledby="llanfairpwllgwyngyll-sright-tab" id="llanfairpwllgwyngyll-sright">
+                <h1>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</h1>
+                <section>
+                  <p><small>From Wikipedia, the free encyclopedia</small></p>
+                </section>
+                <section>
+                  <p>
+                    Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch (pronounced
+                    [ˌɬanvair­pʊɬˌɡwɨ̞ŋɡɨ̞ɬ­ɡɔˌɡɛrə­ˌχwərn­ˌdrɔbʊɬ­ˌɬan­təˌsɪljɔ­ˌɡɔɡɔ­ˈɡoːχ] in Welsh), official short
+                    form name Llanfairpwllgwyngyll (pronounced [ɬanˌvair puɬˈɡwɨ̞nɡɨ̞ɬ]), also spelled Llanfair
+                    Pwllgwyngyll, is a large village and local government community on the island of Anglesey in Wales.
+                    It is situated on the Menai Strait next to the Britannia Bridge and across the strait from Bangor.
+                    While the official short form name is used in official contexts, both the full name and shortened
+                    (Llanfairpwll or Llanfair PG) forms of the place name are used in various contexts.
+                  </p>
+                  <p>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll"
+                      target="_blank"
+                      title="Open Wikipedia article in a new tab."
+                      >Full article &gt;</a
+                    >
+                  </p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1">
+          <ul class="nav sideways-tabs nav-tabs right-tabs nav-tabs">
+            <li class="nav-item" role="presentation">
+              <div id="lorem-sright-tab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#lorem-sright" type="button" role="tab" aria-controls="lorem-sright" aria-selected="true">Lorem</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <div id="ipsum-sright-tab" class="nav-link" data-bs-toggle="tab" data-bs-target="#ipsum-sright" type="button" role="tab" aria-controls="ipsum-sright" aria-selected="false">Ipsum</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <!-- use the title attribute to show a tooltip with the full long name
+                   in case the tab is trucated-->
+              <div
+                id="llanfairpwllgwyngyll-sright-tab"
+                class="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target="#llanfairpwllgwyngyll-sright"
+                type="button"
+                title="Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch"
+                role="tab"
+                aria-controls="llanfairpwllgwyngyll-sright"
+                aria-selected="false"
+                >Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <footer class="container text-center">
+          <hr />
+          <small>That's all folks!<br />&copy; 2020-2021 <a href="https://github.com/tromgy">Tromgy</a><br /></small>
+        </footer>
+      </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

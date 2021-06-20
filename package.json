@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-5-vertical-tabs",
+  "version": "1.0.0",
+  "description": "Responsive vertical tabs navigation component for Bootstrap 5",
+  "main": "index.html",
+  "scripts": {
+    "build-dev": "npm run css-compile && npm run css-minify",
+    "build": "npm ci && npm run css-compile && npm run css-minify",
+    "css-compile": "sass index.scss --no-error-css --load-path=node_modules build/b5vtabs.css",
+    "css-minify": "cd build && cleancss -o ../dist/b5vtabs.min.css b5vtabs.css --source-map",
+    "test": "npm run build && npm run build-dev"
+  },
+  "keywords": [
+    "bootstrap",
+    "navigation",
+    "tabs"
+  ],
+  "author": "Tromgy",
+  "repository": "https://github.com/tromgy/bootstrap-5-vertical-tabs.git",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "sass": "1.32.x"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.3.0"
+  }
+}
