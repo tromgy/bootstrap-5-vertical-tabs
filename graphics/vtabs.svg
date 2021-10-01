@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-  <rect style="fill: rgb(255, 255, 255);" x="0" y="0" width="500" height="500" rx="100" ry="100"/>
-  <line style="stroke-width: 21px; stroke-linecap: round; stroke-dashoffset: 10px; stroke-dasharray: 10, 50, 20, 40; stroke: rgb(10, 88, 202);" x1="23.059" y1="82.2" x2="296" y2="83.64"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 21px; stroke-linecap: round; stroke-dashoffset: 10px; stroke-dasharray: 5, 50, 30, 40;" x1="18" y1="190.4" x2="265" y2="191.9"/>
-  <line style="stroke-width: 21px; stroke-linecap: round; stroke-dashoffset: 10px; stroke-dasharray: 10, 50, 20, 40, 11, 60; stroke: rgb(10, 88, 202);" x1="2.059" y1="298.7" x2="265" y2="300.159"/>
-  <line style="stroke-width: 21px; stroke-linecap: round; stroke-dashoffset: 10px; stroke-dasharray: 10, 60, 10, 40, 20, 50; stroke: rgb(10, 88, 202);" x1="3.059" y1="406.9" x2="281" y2="408.419"/>
-  <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke-width: 6px; stroke: rgb(161, 159, 159);" d="M 318.318 236.042 L 34 236.042 C 25.163 236.042 18 228.879 18 220.042 L 18 162.257 C 18 153.42 25.163 146.257 34 146.257 M 318.318 39.057 L 318.318 146.257 M 34 146.257 L 318.318 146.257 M 318.318 236.042 L 318.318 455.091"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-dasharray: 10, 30, 5, 30, 15, 30; stroke-width: 18px;" x1="347.784" y1="72.2" x2="479.656" y2="72.2"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 25, 40, 5;" x1="347.784" y1="114.822" x2="479.656" y2="114.822"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 15, 40, 10, 40;" x1="347.784" y1="147.444" x2="479.656" y2="147.444"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34;" x1="347.784" y1="180.066" x2="479.656" y2="180.066"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 15, 20;" x1="347.784" y1="212.688" x2="479.656" y2="212.688"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 5, 30;" x1="347.784" y1="245.31" x2="479.656" y2="245.31"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 33, 43;" x1="347.784" y1="277.931" x2="479.656" y2="277.931"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 2, 43;" x1="347.784" y1="310.553" x2="479.656" y2="310.553"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 15, 30, 22, 22, 2;" x1="347.784" y1="343.175" x2="479.656" y2="343.175"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 43, 23;" x1="347.784" y1="375.797" x2="479.656" y2="375.797"/>
-  <line style="stroke: rgb(0, 0, 0); stroke-width: 11px; stroke-linecap: round; stroke-dasharray: 5, 34, 34, 40;" x1="347.784" y1="408.419" x2="479.656" y2="408.419"/>
+  <rect style="fill: rgb(255, 255, 255);" width="500" height="500" rx="100" ry="100"/>
+  <rect style="fill: rgb(10, 88, 202); fill-opacity: 0.25;" x="154.819" y="79.527" width="126.588" height="16" rx="10" ry="10"/>
+  <rect style="fill: rgb(10, 88, 202); fill-opacity: 0.25;" x="154.819" y="283.11" width="80" height="16" rx="10" ry="10"/>
+  <rect style="fill: rgb(10, 88, 202); fill-opacity: 0.25;" x="154.819" y="384.902" width="80" height="16" rx="10" ry="10"/>
+  <g transform="matrix(1, 0, 0, 0.79972, 111, 36.125431)">
+    <rect style="fill: rgb(0, 14, 34); fill-opacity: 0.25;" x="43.819" y="181.555" width="57.539" height="20" rx="10" ry="10"/>
+    <rect style="fill: rgb(0, 14, 34); fill-opacity: 0.25;" x="116.745" y="181.562" width="29.098" height="20" rx="10" ry="10"/>
+  </g>
+  <path style="fill: none; stroke-linejoin: round; stroke-linecap: round; stroke: rgb(59, 58, 58); stroke-width: 13px;" d="M 343.765 236.042 L 140.442 236.042 C 134.122 236.042 129 228.879 129 220.042 L 129 162.257 C 129 153.42 134.122 146.257 140.442 146.257 M 343.765 39.057 L 343.765 146.257 M 140.442 146.257 L 343.765 146.257 M 343.765 236.042 L 343.765 455.091"/>
+  <path style="fill: none; stroke-linejoin: round; stroke: rgb(226, 226, 226); stroke-width: 6px;" d="M 336.743 440.466 L 136.281 440.466 C 130.051 440.466 125 433.303 125 424.466 L 125 366.681 C 125 357.844 130.051 350.681 136.281 350.681 M 136.281 350.681 L 336.743 350.681"/>
+  <path d="M 275.454 451.389 L 270.087 456.756 L 255.767 442.621 L 252.546 454.223 L 240.572 421.594 L 272.682 433.987 L 261.083 437.203 Z" style="" transform="matrix(0.898182, 0.439623, -0.439623, 0.898182, 219.341792, -68.712714)"/>
 </svg>
