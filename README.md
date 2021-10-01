@@ -18,7 +18,7 @@ You can use this package either by directly embedding its pre-built (in the **di
 ```HTML
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-5-vertical-tabs@1.0.3/dist/b5vtabs.min.css" integrity="sha384-Ksm4tDVTxHLhHhuQck8XWxrJ/FD2AOykMNuFI21j/5yEpz18TaaiwsT/w33ZiPkl" crossorigin="anonymous"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-5-vertical-tabs@1.0.4/dist/b5vtabs.min.css" integrity="sha384-Ksm4tDVTxHLhHhuQck8XWxrJ/FD2AOykMNuFI21j/5yEpz18TaaiwsT/w33ZiPkl" crossorigin="anonymous"
 />
 ```
 

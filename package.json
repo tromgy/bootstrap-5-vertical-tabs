@@ -1,14 +1,15 @@
 {
   "name": "bootstrap-5-vertical-tabs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Responsive vertical tabs navigation component for Bootstrap 5",
   "main": "index.html",
   "scripts": {
     "build-dev": "npm run css-compile && npm run css-minify",
-    "build": "npm ci && npm run css-compile && npm run css-minify",
+    "build": "npm ci && npm run css-compile && npm run css-minify && npm run sri-gen",
     "css-compile": "sass index.scss --no-error-css --load-path=node_modules build/b5vtabs.css",
     "css-minify": "cd build && cleancss -o ../dist/b5vtabs.min.css b5vtabs.css --source-map",
-    "test": "npm run build && npm run build-dev"
+    "test": "npm run build && npm run build-dev",
+    "sri-gen": "openssl dgst -sha384 -binary dist/b5vtabs.min.css | openssl base64 -A > dist/sha384.txt"
   },
   "keywords": [
     "bootstrap",
