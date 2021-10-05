@@ -13,14 +13,14 @@
  *
  */
 
-// When the view is narrower than this navpill-like buttons are used,
+// When the view is narrower than this tabs turn into an accordion,
 // otherwise horizontal tabs are used up until $vertical-tabs-min width
-$horizontal-tabs-min: 26em;
+$horizontal-tabs-min: 428px; // iPhone 13 Pro Max (as a proxy for "largest smartphone")
 
 // When the view is wider than this, vertical tabs are used
-$vertical-tabs-min: 48em;
+$vertical-tabs-min: 767px; // Need it to be just 1px less than 768px Bootstrap column breakpoint
 
-// Set this depending on the longest caption text of the tabs
+// Set this depending on the longest expected caption text of the tabs
 // If the text is still longer than that, it will be truncated with ellipsis
 // NOTE: there are practical limits on this value, the "good" values
 // seem to be somewhere beetween 4 and 12rem;

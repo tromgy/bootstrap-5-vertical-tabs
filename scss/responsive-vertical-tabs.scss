@@ -13,8 +13,8 @@
  *
  */
 
-@import "bootstrap/scss/_functions";
-@import "bootstrap/scss/_variables";
+@import 'bootstrap/scss/_functions';
+@import 'bootstrap/scss/_variables';
 
 // Magic numbers
 $magic-horizontal-value: 3.2rem;
@@ -35,13 +35,17 @@ $sideways-tabs-height: 1rem;
   flex-direction: column;
 }
 
+@mixin limit-text-length {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 // Mixins (can be reused inside @media scope)
 @mixin fixed-tab($size: $fixed-tab-size) {
   width: $size;
   text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  @include limit-text-length;
 }
 
 // Used in horizontal tab configuration (narrow views)
@@ -52,13 +56,18 @@ $sideways-tabs-height: 1rem;
   min-width: 100%;
 }
 
+.ellipsis {
+  @include limit-text-length;
+  padding-right: 0.5rem;
+}
+
 // Workaround for Safari issue :/
 // Bootstrap 5 uses <button type="button"> for tabs, but
 // <button> doesn't work for vertical orientation, and applying type="button"
-// to another element (e.g. <div>) will render it in Safari as "early 21st century style" button,
+// to another element (e.g. <div>) will render it in Safari as an "early 21st century style" button,
 // with gray gradient, border, etc. So we don't set type="button", but then we need
 // to change the cursor to indicate that the tab is "clickable"
-.tab-clickable {
+.vtabs .tab-clickable {
   cursor: pointer;
 }
 
@@ -186,8 +195,13 @@ $sideways-tabs-height: 1rem;
   border-left: $nav-tabs-border-width solid $nav-tabs-border-color;
 }
 
+// Do not display accordion when in tab mode (wide view)
+.vtabs .accordion-header {
+  display: none;
+}
+
 // Use horizontal tabs when the view is too narrow for the vertical tabs on the side
-@media (min-width: $horizontal-tabs-min) and (max-width: $vertical-tabs-min) {
+@media (max-width: $vertical-tabs-min) {
   .left-tabs.nav-tabs {
     @include flex-tabs-h;
     border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
@@ -260,59 +274,40 @@ $sideways-tabs-height: 1rem;
   }
 }
 
-// Turn tabs into nav-pill-like buttons when the view is very narrow
+// Turn tabs into an accordion when the view is very narrow...
 @media (max-width: $horizontal-tabs-min) {
   .left-tabs.nav-tabs {
-    @include flex-tabs-h;
-    border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
-    left: auto;
-    margin-top: auto;
-    padding-bottom: $nav-tabs-border-radius;
+    display: none;
   }
 
   .right-tabs.nav-tabs {
-    @include flex-tabs-h;
-    border-top: $nav-tabs-border-width solid $nav-tabs-border-color;
-    right: auto;
-    margin-top: auto;
-    padding-top: $nav-tabs-border-radius;
+    display: none;
   }
 
-  .sideways-tabs.left-tabs .nav-item,
-  .sideways-tabs.right-tabs .nav-item {
-    transform: none;
-    height: auto;
-    width: auto;
-    margin-bottom: 0;
+  // This is to ensure that all tabs are visible at once (in an accordion)
+  .vtabs .tab-content > .tab-pane {
+    display: block !important;
+    opacity: 1;
   }
 
-  .sideways-tabs.left-tabs .nav-link,
-  .sideways-tabs.right-tabs .nav-link,
-  .nav-tabs .nav-link {
-    @include fixed-tab;
-    border-radius: $nav-tabs-border-radius;
-    margin: $nav-tabs-border-radius;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
+  .vtabs .accordion-header {
+    display: block;
   }
 
-  .sideways-tabs.nav-tabs .nav-link:hover,
-  .nav-tabs .nav-link:hover {
-    border: $nav-tabs-border-width solid $gray-200;
-    border-top-color: $gray-200;
-    border-right-color: $gray-200;
-    border-bottom-color: $gray-200;
-    border-left-color: $gray-200;
+  .vtabs button.accordion-button:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// ...and disable any accordion-ness when it is wider
+@media (min-width: $horizontal-tabs-min + 1) {
+  .vtabs .accordion-item {
+    border: none; // Display border only when it is in accordion mode (narrow view)
   }
 
-  .sideways-tabs.nav-tabs .nav-link.active,
-  .left-tabs .nav-link.active,
-  .right-tabs .nav-link.active {
-    border-top-color: $nav-tabs-border-color;
-    border-right-color: $nav-tabs-border-color;
-    border-bottom-color: $nav-tabs-border-color;
-    border-left-color: $nav-tabs-border-color;
+  .vtabs .accordion-body.collapse {
+    display: block; // Always display (tab) content in wide view even if it was collapsed in accordion
   }
 }
