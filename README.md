@@ -41,7 +41,7 @@ This assumes that you use SCSS stylesheets.
 ### 1. In your stylesheet either:
 
 ```SCSS
-@import "bootstrap-5-vertical-tabs/custom-variables";
+@import "bootstrap-5-vertical-tabs/scss/custom-variables";
 @import "bootstrap-5-vertical-tabs/scss/responsive-vertical-tabs";
 ```
 

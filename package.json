@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-5-vertical-tabs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Responsive vertical tabs navigation component for Bootstrap 5",
   "main": "./dist/index.html",
   "jsdelivr": "./dist/b5vtabs.min.css",
